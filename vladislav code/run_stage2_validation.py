@@ -43,7 +43,6 @@ with open("output/stage2_summary_report.json", "w", encoding="utf-8") as f:
 
 with open("output/stage2_summary_report.txt", "w", encoding="utf-8") as f:
     f.write("СВОДНЫЙ ОТЧЁТ ПРОВЕРКИ МОДЕЛЕЙ\n")
-    f.write("=" * 60 + "\n\n")
 
     for item in summary:
         f.write(f"Модель: {item['model']}\n")

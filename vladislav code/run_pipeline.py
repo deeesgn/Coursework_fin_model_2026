@@ -30,6 +30,6 @@ excel_path = filler.fill(model_data)
 report = ReportGenerator()
 report_path = report.generate(validation_result, info)
 
-print("=== ГОТОВО ===")
+print("ГОТОВО")
 print("Excel:", excel_path)
 print("Report:", report_path)

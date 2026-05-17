@@ -14,16 +14,16 @@ class ReportGenerator:
     def generate(self, validation_result: dict, data_info: dict):
         lines = []
 
-        lines.append("=== DATA LOADING REPORT ===")
+        lines.append("DATA LOADING REPORT")
         lines.append(f"Дата: {datetime.now()}")
         lines.append("")
 
-        lines.append("=== DATA INFO ===")
+        lines.append("DATA INFO")
         for key, value in data_info.items():
             lines.append(f"{key}: {value}")
 
         lines.append("")
-        lines.append("=== VALIDATION ===")
+        lines.append("VALIDATION")
         lines.append(f"Valid: {validation_result['is_valid']}")
 
         lines.append("")
